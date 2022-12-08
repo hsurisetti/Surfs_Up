@@ -9,16 +9,17 @@ The Investor W.Avy, provided us the sqlite database containing temperatures reco
 
 
 ## Results :
- June statistics show that there are 1700 data entrees with mean temperature in Oahu being 74.9 F . The lowest it can go is 64 F and high being 85 F. This show a 20 degree variation in data.
-
+ 
 ### Queries for June and December 
+
+Below are the queries for extracting the June and December temperatures
 
 * Query for extracting June Temperatures
     ```javascript
     june_results = session.query(Measurement.date,Measurement.tobs).\
         filter(extract('month',Measurement.date)==6).all()
     ```
- <img src="https://github.com/hsurisetti/Surfs_Up/blob/main/images/June_Temps.png" width=300/>
+     <img src="https://github.com/hsurisetti/Surfs_Up/blob/main/images/June_Temps.png" width=300/>
 
 * Query for extracting December Temperatures
 
@@ -26,14 +27,18 @@ The Investor W.Avy, provided us the sqlite database containing temperatures reco
     december_results = session.query(Measurement.date,Measurement.tobs).\
         filter(extract('month',Measurement.date)==12).all()
     ```
-<img src="https://github.com/hsurisetti/Surfs_Up/blob/main/images/December_temps.png" width=300/>
+    <img src="https://github.com/hsurisetti/Surfs_Up/blob/main/images/December_temps.png" width=300/>
+    
+The Below is combined temperature list where we can compare side by side together.
 
-<img src="https://github.com/hsurisetti/Surfs_Up/blob/main/images/Combined_temps.png" width=430/>
+    <img src="https://github.com/hsurisetti/Surfs_Up/blob/main/images/Combined_temps.png" width=430/>
 
 
 ### June Temperatures Statistics
+
+June statistics show that there are 1700 data entrees with mean temperature in Oahu being 74.9 F . The lowest it can go is 64 F and high being 85 F. This show a 20 degree variation in data.
      
-<img src="https://github.com/hsurisetti/Surfs_Up/blob/main/images/June_stats.png" width=260/>
+<img src="https://github.com/hsurisetti/Surfs_Up/blob/main/images/June_stats.png" width=250/>
 
 However, the December data shows that there are 1517 data entrees with mean temperature in Oahu being 71.04 F. The lowest it reaches is 56 F and highest being 83 F. This shows a 27 degree varaiation in data
 
@@ -46,7 +51,7 @@ However, the December data shows that there are 1517 data entrees with mean temp
 
 
 ## Summary
- Based on the mean temperature statistics we can see that , the temperatures are very ideal. The mean temperatures of June representing summer show being 75 F and December temperatures representing winter drops to 71 F. Since both the temperatures are ideal , it looks a prefece place for the tourist to visit.
+ Based on the mean temperature statistics, we can see that , the temperatures are very ideal. The mean temperatures of June representing summer show 75 F and December temperatures representing winter drops to 71 F. Since both the temperatures are ideal , it looks a prefect place for the tourist to visit.
 
  ### <b>Histogram Plots to visualize the data</b>
 
@@ -60,7 +65,7 @@ However, the December data shows that there are 1517 data entrees with mean temp
 
 * <b>Histogram of December Temperatures</b>
 
-  The Histogram chart of December shows that the temperatures mostly fall between 66 F and 76 F. The high peak shows that many days in December have 72 F . Although there are temperatures drop in December comapred to summer, it is not as bad since its only few degrees less than summer months.
+  The Histogram chart of December shows that the temperatures mostly fall between 66 F and 76 F. The high peak shows that many days in December have 72 F . Although there are temperatures drop in December compared to summer, it is not as bad since its only few degrees less than summer months.
 
 <img src="https://github.com/hsurisetti/Surfs_Up/blob/main/images/DecemberTemps.png" width=550/>
 
