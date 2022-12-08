@@ -85,7 +85,7 @@ Although the image shows more outliers in the lower limit, they are however very
 <img src="https://github.com/hsurisetti/Surfs_Up/blob/main/images/BoxPlot.png" width=650/>
 
 
- Although, we know that the plots represents the outliers based only on the data, there could be other factors involved which we are not counting like precipitation, wind etc. But, looking at the temperatures and their possible outliers would give a rough idea about how optimal the weather might be for the tourists to visit. 
+ Although, we know that the plots represents the outliers based only on the data, there could be other factors involved which we are not counting like precipitation, wind etc. But, looking at the temperatures and their possible outliers would give a fair enough idea about how optimal the weather might be for the tourists to visit. 
 
 
 ## Conclusion
